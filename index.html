@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Frontend Mentor | Interactive card details form</title>
+  </head>
+  <body>
+    <div class="cont">
+      <div class="card">
+        <div class="front">
+          <img src="/images/card-logo.svg" alt="" class="profile" />
+          <aside>
+            <p id="number">0000 0000 0000 0000</p>
+            <article>
+              <span id="name">Young Lite</span>
+              <p><span id="month">00</span>/<span id="year">00</span></p>
+            </article>
+          </aside>
+        </div>
+        <div class="cvc">
+          <p id="cvc">000</p>
+        </div>
+      </div>
+      <section class="form" id="main">
+        <form action="">
+          <label for="cardholder">Cardholder Name</label>
+          <input
+            type="text"
+            onkeyup="update()"
+            placeholder="e.g. Jane Appleseed"
+            id="cardholder"
+          />
+          <p id="errorname" class="error">Can't be blank</p>
+          <label for="cardnumber">Card Number</label>
+          <input
+            type="text"
+            onkeyup="update()"
+            placeholder=" e.g. 1234 5678 9123 0000"
+            id="cardnumber"
+          />
+          <p id="errornum" class="error">Can't be blank</p>
+          <p id="errornumnew" class="error">Must contain numbers only</p>
+          <article>
+            <aside>
+              <label for="monthexpiry ">Exp. Date (MM/YY) </label>
+              <blockquote>
+                <section>
+                  <input
+                    type="text"
+                    onkeyup="update()"
+                    placeholder="MM"
+                    id="monthexpiry"
+                  />
+                  <p id="errormonth" class="error">Can't be blank</p>
+                </section>
+                <section>
+                  <input
+                    type="text"
+                    onkeyup="update()"
+                    placeholder="YY"
+                    id="yearexpiry"
+                  />
+                  <p id="erroryear" class="error">Can't be blank</p>
+                </section>
+              </blockquote>
+            </aside>
+            <figure>
+              <label for="cardcvc">CVC</label>
+              <input
+                type="text"
+                placeholder="e.g. 123"
+                onkeyup="update()"
+                id="cardcvc"
+              />
+              <p id="errorcvc" class="error">Can't be blank</p>
+            </figure>
+          </article>
+          <span class="button" onclick="reset()">CONFIRM</span>
+        </form>
+      </section>
+      <div class="finish" id="thanks">
+        <img src="/images/icon-complete.svg" alt="" class="thank" />
+        <h2>THANK YOU!</h2>
+        <p>We've added your card details</p>
+        <button class="button" onclick="exit()">Continue</button>
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
