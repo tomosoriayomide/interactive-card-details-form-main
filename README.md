@@ -33,8 +33,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/interactive-card-details-form-8-fbdU2n2o)
+- Live Site URL: [Add live site URL here](https://interactivecarddetails.vercel.app)
 
 ## My process
 I used flex box to position the both containers on the left and right positions then also used position fixed to align the cvc numbers in its rightful position. 
